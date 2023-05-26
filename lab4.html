@@ -1,0 +1,50 @@
+let user = {
+  name: "Джон",
+  age: 30
+};
+
+user.sayHi = function() {
+  alert("Привет!");
+};
+
+user.sayHi(); 
+
+let buyer = {
+  name: "Alex",
+  age: 30,
+  wage: 202020;
+  nickname: "Al",
+  other: "other info"
+};
+
+buyer.three = function() {
+  alert(name, age, wage);
+};
+
+buyer.three();
+
+
+
+function User(name) {
+  this.name = name;
+  this.isAdmin = false;
+}
+
+let user = new User("Вася", ");
+
+alert(user.name); 
+alert(user.isAdmin); 
+
+
+function User(name) {
+  this.name = name;
+
+  this.sayHi = function() {
+    alert( "Меня зовут: " + this.name );
+  };
+}
+
+let vasya = new User("Вася");
+
+vasya.sayHi();
+

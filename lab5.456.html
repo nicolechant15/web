@@ -1,0 +1,41 @@
+<meta charset="utf-8"/>
+<header>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</header>
+<body>
+<label>
+<h1>Задание 4</h1>
+
+<p class="text-center">Введите имя</p>
+
+<input type="text" id="input_text"/>
+<button type="submit" class="btn btn-primary" id="button" onclick="nameFunc()">Ввод</button>
+
+<script>
+const btn = document.getElementsByClassName("btn btn-primary");
+var name = document.getElementById('input_text').value;
+	
+function nameFunc(){
+	class Hello {
+	constructor() {
+    this.username = "";
+  }
+ 
+  setName(name) {
+    this.username = name;
+  }
+ 
+  greet() {
+    document.write('Привет, ${this.username}');
+  }
+  flip() {
+    document.write(this.username.split('').reverse().join(''));
+  }
+}
+}
+
+
+</script>
+</label>
+</body>
